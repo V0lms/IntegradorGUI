@@ -184,9 +184,9 @@ public class Inicio extends JFrame {
 	private void updateButton() {
 		try {
 			if(passwContrasenya.getPassword().length > 0 && txtNameUsuario.getText().length() > 0) {
-				btnIniciarSesion.setEnabled(false);
-			}else {
 				btnIniciarSesion.setEnabled(true);
+			}else {
+				btnIniciarSesion.setEnabled(false);
 			}
 		} catch (Exception e) {
 			System.out.println(e.getMessage()+"No se puede actualizar el boton");
